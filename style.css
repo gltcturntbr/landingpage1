@@ -1,12 +1,16 @@
 body {
-    font-family: 'Comic Sans MS', Arial, Helvetica;
+  font-family: "Comic Sans MS", Arial, Helvetica;
+}
+
+li {
+  list-style-type: none;
+  flex: 1 0 auto;
 }
 
 .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style-type: none;
   background-color: aqua;
   padding: 20px 30px;
   margin: 0px 0px;
@@ -15,9 +19,28 @@ body {
 }
 a {
   text-decoration: none;
-  color: white
+  color: white;
+  
 }
 
 #middle-link {
-    font-size: 50px;
+  font-size: 50px;
+}
+.big-thing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  width: 100px;
+}
+
+.big-thing-text {
+  font-size: 30px;
 }
