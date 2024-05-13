@@ -1,0 +1,23 @@
+body {
+    font-family: 'Comic Sans MS', Arial, Helvetica;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background-color: aqua;
+  padding: 20px 30px;
+  margin: 0px 0px;
+  border: solid;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: white
+}
+
+#middle-link {
+    font-size: 50px;
+}
