@@ -1,13 +1,18 @@
 body {
+  background-color: #f7fbfe;
   font-family: "Comic Sans MS", Arial, Helvetica;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .header {
   background-image: url("dog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f6fbfe;
 }
 
 li {
@@ -50,12 +55,11 @@ a {
   gap: 10px;
   align-self: end;
   padding-right: 60px;
-  flex: none;
   gap: 30px;
 }
 
 .buttons button {
-  padding: 5px 30px;
+  padding: 10px 30px;
   background-color: rgba(127, 255, 212, 0.5);
   border-radius: 10px;
   font-family: inherit;
@@ -69,18 +73,19 @@ a {
 .big-thing-text {
   font-size: 60px;
   font-weight: 1000;
-  color: #61b7c2;
+  color: aquamarine;
 }
 .big-thing-subtitle {
   font-size: 20px;
   align-self: baseline;
-  color: #61b7c2;
+  color: aquamarine;
 }
 
 .boxes {
   display: flex;
   justify-content: space-evenly;
-  margin: 15px;
+  margin: 30px;
+  gap: 100px;
 }
 .card {
   border-radius: 10px;
@@ -88,6 +93,8 @@ a {
   width: 150px;
   height: 100px;
   display: flex;
+  flex-grow: 0.5;
+  flex-shrink: 0;
   flex-direction: column;
   background-color: rgb(175, 144, 120);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -97,8 +104,51 @@ a {
 
 .quote {
   padding-left: 10px;
+  margin: auto 0;
 }
 .name {
   align-self: flex-end;
   padding-right: 10px;
+}
+
+@keyframes wtf {
+  from {
+    transform: translate(200%, 0);
+  }
+  to {
+    transform: translate(-200%, 0);
+  }
+}
+.list-of-quotes {
+  display: flex;
+  overflow: hidden;
+  padding: 0% auto;
+  white-space: nowrap;
+  justify-content: center;
+}
+.list-of-quotes div {
+  font-size: 30px;
+  color: #61b7c2;
+  animation: wtf 8s linear infinite;
+}
+.big-button {
+  padding: auto;
+  display: block;
+  margin: 25px auto;
+  width: 50%;
+  height: 60px;
+  font-family: inherit;
+  font-size: 17px;
+  background-image: linear-gradient(
+    to left,
+    rgb(30, 188, 224),
+    rgb(223, 228, 82),
+    rgb(70, 152, 233)
+  );
+  transition: width 2s, height 3s, font-size, 3s;
+}
+.big-button:hover {
+  width: 65%;
+  height: 75px;
+  font-size: 22px;
 }
