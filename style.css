@@ -1,7 +1,5 @@
 body {
   font-family: "Comic Sans MS", Arial, Helvetica;
-  padding: 0%, 0%;
-  margin: 0%, 0%;
 }
 
 .header {
@@ -21,12 +19,11 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   padding: 20px 30px;
   margin: 0px 0px;
-
   font-size: 20px;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -49,25 +46,54 @@ a {
   align-self: end;
   padding-right: 60px;
   flex: none;
+  gap: 30px;
 }
 
 .buttons button {
-  padding: 5px 20px;
-  background-color: aquamarine;
+  padding: 5px 30px;
+  background-color: rgba(127, 255, 212, 0.5);
   border-radius: 10px;
   font-family: inherit;
   transition: padding 1.5s;
 }
 .buttons button:hover {
   padding: 15px 50px;
+  background-color: rgba(127, 255, 212, 1);
 }
 
 .big-thing-text {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 1000;
   color: #61b7c2;
 }
 .big-thing-subtitle {
+  font-size: 20px;
   align-self: baseline;
   color: #61b7c2;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(175, 144, 120);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.quote{
+  padding-left: 10px;
+}
+.name {
+  align-self: flex-end;
+  padding-right: 10px;
 }
