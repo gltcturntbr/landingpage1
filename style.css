@@ -22,6 +22,7 @@ li {
   padding: 20px 30px;
   margin: 0px 0px;
   font-size: 20px;
+  text-align: center;
 }
 
 a {
@@ -29,8 +30,12 @@ a {
   color: black;
 }
 
-#middle-link {
-  font-size: 50px;
+#middle-link img {
+  max-width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .big-thing {
@@ -90,7 +95,7 @@ a {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.quote{
+.quote {
   padding-left: 10px;
 }
 .name {
